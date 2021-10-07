@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MKX-APP</string>
+    <string name="user_email">Email</string>
+    <string name="user_password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="signin_button">Singin</string>
+</resources>

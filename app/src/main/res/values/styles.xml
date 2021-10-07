@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MKXAPP.login_style">
+        <item name="android:windowBackground">@color/blue</item>
+    </style>
+    <style name="Theme.MKXAPP.login_label">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Theme.MKXAPP.login_edit">
+        <item name="android:backgroundTint">@color/primary_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Theme.MKXAPP.login_button">
+        <item name="android:background">@drawable/login_button_roundend</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Theme.MKXAPP.signin_button">
+        <item name="android:background">@drawable/singin_button_rounded</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
