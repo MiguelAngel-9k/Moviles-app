@@ -84,7 +84,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/btnSingin"
+            android:id="@+id/btnSignin"
             style="@style/Theme.MKXAPP.signin_button"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
