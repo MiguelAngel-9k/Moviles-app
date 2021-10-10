@@ -18,10 +18,26 @@
         <item name="android:textColor">@color/primary_text</item>
         <item name="android:textSize">16sp</item>
     </style>
+    <style name="Theme.MKXAPP.ok_button">
+        <item name="android:background">@drawable/ok_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Theme.MKXAPP.cancel_button">
+        <item name="android:background">@drawable/cancel_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
     <style name="Theme.MKXAPP.signin_button">
         <item name="android:background">@drawable/singin_button_rounded</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/primary_text</item>
         <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Theme.MKXAPP.register_title">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>
