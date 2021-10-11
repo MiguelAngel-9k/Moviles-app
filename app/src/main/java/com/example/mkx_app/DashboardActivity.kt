@@ -6,14 +6,17 @@ import androidx.recyclerview.widget.RecyclerView
 
 class DashboardActivity : AppCompatActivity() {
 
-    private var recycler:RecyclerView? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
-    }
+        val recycler:RecyclerView = findViewById<RecyclerView>(R.id.postRecycler)
 
-    init {
-        recycler = findViewById<RecyclerView>(R.id.postContainer)
+        recycler.adapter = postAdapter(listOf(
+            Post("https://loremflickr.com/320/240","mike", "Primer post de la app", "https://loremflickr.com/320/240/dog", 0),
+            Post("https://loremflickr.com/320/240/dog","Lucius", "Segundo post de la app", "https://loremflickr.com/320/240/dog", 0),
+            Post("https://loremflickr.com/320/240/dog","Tony", "Tercero post de la app", "https://loremflickr.com/320/240/dog", 0),
+            Post("https://loremflickr.com/320/240/dog","Mark", "Cuarto post de la app", "https://loremflickr.com/320/240/dog", 0),
+            Post("https://loremflickr.com/320/240/dog","Antonio", "Quinto post de la app", "https://loremflickr.com/320/240/dog", 0)
+        ))
     }
 }
