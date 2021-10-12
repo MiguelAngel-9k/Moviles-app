@@ -17,4 +17,6 @@
     <string name="log_out">Log out</string>
     <string name="comment_button">Comment</string>
     <string name="post_button">Post</string>
+    <string name="images">Images</string>
+    <string name="documents">Documents</string>
 </resources>
