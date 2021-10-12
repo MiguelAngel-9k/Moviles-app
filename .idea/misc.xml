@@ -14,14 +14,17 @@
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/burger_background.xml" value="0.1763888888888889" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/burger_button_rounded.xml" value="0.1763888888888889" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/cancel_button.xml" value="0.24027777777777778" />
+        <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/commet_container_rounded.xml" value="0.24027777777777778" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/logo_rounded.xml" value="0.1763888888888889" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/ok_button.xml" value="0.24027777777777778" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/post_title_rounded.xml" value="0.1763888888888889" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/search_rounded.xml" value="0.1763888888888889" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/singin_button_rounded.xml" value="0.24027777777777778" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/layout-land/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/layout/activity_comment.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/layout/activity_dashboard.xml" value="0.2951388888888889" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/layout/activity_main.xml" value="0.28935185185185186" />
+        <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/layout/comment_view.xml" value="0.22592592592592592" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/layout/fragment_navbar.xml" value="0.4" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/layout/fragment_signin.xml" value="0.2" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/layout/fragment_slide.xml" value="0.264" />

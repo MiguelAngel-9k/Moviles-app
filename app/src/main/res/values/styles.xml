@@ -63,7 +63,6 @@
     <style name="Theme.MKXAPP.search">
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">12sp</item>
-        <item name="color"></item>
     </style>
     <style name="Theme.MKXAPP.slide_button">
         <item name="background">@color/dark_blue</item>
@@ -72,5 +71,19 @@
         <item name="android:textSize">32sp</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:textAlignment">center</item>
+    </style>
+    <style name="Theme.MKXAPP.comment_title">
+        <item name="background">@drawable/commet_container_rounded</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="Theme.MKXAPP.comment">
+        <item name="background">@drawable/commet_container_rounded</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">5dp</item>
     </style>
 </resources>
