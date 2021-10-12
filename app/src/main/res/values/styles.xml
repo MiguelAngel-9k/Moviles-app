@@ -65,4 +65,7 @@
         <item name="android:textSize">12sp</item>
         <item name="color"></item>
     </style>
+    <style name="Theme.MKXAPP.slide_button">
+        <item name="background">@color/dark_blue</item>
+    </style>
 </resources>

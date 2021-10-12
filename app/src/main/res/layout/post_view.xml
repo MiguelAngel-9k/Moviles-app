@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/blue"
-    android:layout_margin="15dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="@color/blue">
 
     <ImageView
         android:id="@+id/postImage"
@@ -32,11 +32,11 @@
 
     <TextView
         android:id="@+id/txtUserName"
+        style="@style/Theme.MKXAPP.post_user"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="By: User name"
-        style="@style/Theme.MKXAPP.post_user"
         app:layout_constraintEnd_toEndOf="@+id/txtPostTitle"
         app:layout_constraintStart_toStartOf="@+id/txtPostTitle"
         app:layout_constraintTop_toBottomOf="@+id/txtPostTitle" />
@@ -63,43 +63,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:tint="@color/gold"
-            app:srcCompat="@drawable/ic_star_24" />
+            app:srcCompat="@drawable/ic_star_24"
+            app:tint="@color/gold" />
 
         <ImageView
             android:id="@+id/starThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:tint="@color/gold"
-            app:srcCompat="@drawable/ic_star_24" />
+            app:srcCompat="@drawable/ic_star_24"
+            app:tint="@color/gold" />
 
         <ImageView
             android:id="@+id/starFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:tint="@color/gold"
-            app:srcCompat="@drawable/ic_star_outline_24" />
+            app:srcCompat="@drawable/ic_star_outline_24"
+            app:tint="@color/gold" />
 
         <ImageView
             android:id="@+id/starFive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:tint="@color/gold"
-            app:srcCompat="@drawable/ic_star_outline_24" />
+            app:srcCompat="@drawable/ic_star_outline_24"
+            app:tint="@color/gold" />
     </LinearLayout>
 
     <ImageView
         android:id="@+id/userImage"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/logo_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/txtPostTitle"
-        app:layout_constraintStart_toEndOf="@+id/rateContainer"
         app:layout_constraintTop_toBottomOf="@+id/txtUserName"
         tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
