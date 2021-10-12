@@ -16,4 +16,5 @@
     <string name="history_button">History</string>
     <string name="log_out">Log out</string>
     <string name="comment_button">Comment</string>
+    <string name="post_button">Post</string>
 </resources>
