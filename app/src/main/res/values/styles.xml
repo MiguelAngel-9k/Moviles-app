@@ -40,4 +40,29 @@
         <item name="android:textAlignment">center</item>
         <item name="android:textStyle">bold</item>
     </style>
+    <style name="Theme.MKXAPP.dashboard_style">
+        <item name="background">@color/primary_black</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+    <style name="Theme.MKXAPP.post_title">
+        <item name="background">@drawable/post_title_rounded</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Theme.MKXAPP.post_user">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="Theme.MKXAPP.burger_button">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/burger_button_rounded</item>
+    </style>
+    <style name="Theme.MKXAPP.search">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="color"></item>
+    </style>
 </resources>

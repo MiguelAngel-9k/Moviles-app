@@ -12,7 +12,8 @@
         android:theme="@style/Theme.MKXAPP">
         <activity
             android:name=".DashboardActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.MKXAPP.dashboard_style">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

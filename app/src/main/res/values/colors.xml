@@ -8,8 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#1D9CC5</color>
+    <color name="dark_blue">#187E9E</color>
     <color name="orange">#ED5938</color>
     <color name="primary_text">#E5E5E5</color>
     <color name="primary_black">#26292B</color>
     <color name="succes">#B4C646</color>
+    <color name="gold">#E5BB23</color>
 </resources>

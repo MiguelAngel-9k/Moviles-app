@@ -19,11 +19,13 @@
 
     <TextView
         android:id="@+id/txtPostTitle"
+        style="@style/Theme.MKXAPP.post_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="TextView"
+        android:background="@drawable/post_title_rounded"
+        android:text="title of post"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/postImage"
         app:layout_constraintTop_toTopOf="@+id/postImage" />
@@ -33,7 +35,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:text="By: User name"
+        style="@style/Theme.MKXAPP.post_user"
         app:layout_constraintEnd_toEndOf="@+id/txtPostTitle"
         app:layout_constraintStart_toStartOf="@+id/txtPostTitle"
         app:layout_constraintTop_toBottomOf="@+id/txtPostTitle" />
@@ -52,13 +55,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_star_24" />
+            app:srcCompat="@drawable/ic_star_24"
+            app:tint="@color/gold" />
 
         <ImageView
             android:id="@+id/starTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            app:tint="@color/gold"
             app:srcCompat="@drawable/ic_star_24" />
 
         <ImageView
@@ -66,6 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            app:tint="@color/gold"
             app:srcCompat="@drawable/ic_star_24" />
 
         <ImageView
@@ -73,6 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            app:tint="@color/gold"
             app:srcCompat="@drawable/ic_star_outline_24" />
 
         <ImageView
@@ -80,6 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            app:tint="@color/gold"
             app:srcCompat="@drawable/ic_star_outline_24" />
     </LinearLayout>
 
