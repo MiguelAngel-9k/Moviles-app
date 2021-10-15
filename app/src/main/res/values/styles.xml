@@ -49,7 +49,7 @@
     <style name="Theme.MKXAPP.post_title">
         <item name="background">@drawable/post_title_rounded</item>
         <item name="android:textAlignment">center</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">14sp</item>
     </style>
     <style name="Theme.MKXAPP.post_user">
         <item name="android:textStyle">italic</item>

@@ -12,14 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MKXAPP">
         <activity
-            android:name=".ProfileActivity"
+            android:name=".PublishActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-    |   </activity>
+        </activity>
+        <activity
+            android:name=".PostActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".CommentActivity"
             android:exported="true">
@@ -27,7 +35,7 @@
         <activity
             android:name=".DashboardActivity"
             android:exported="true"
-            android:theme="@style/Theme.MKXAPP.dashboard_style"></activity>
+            android:theme="@style/Theme.MKXAPP.dashboard_style" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
