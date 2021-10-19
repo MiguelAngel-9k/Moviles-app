@@ -5,11 +5,20 @@
     <string name="button_login">Login</string>
     <string name="signin_button">Singin</string>
     <string name="user_name">Name</string>
-    <string name="user_last_name">Last name</string>
+    <string name="user_lastName">Last name</string>
     <string name="confirm_password">Confirm password</string>
     <string name="continue_button">Continue</string>
     <string name="cancel_button">Cancel</string>
     <string name="register_user">Register</string>
+    <string name="account">Account</string>
+    <string name="information">Information</string>
+    <string name="adress">Address</string>
+    <string name="avatar">Avatar</string>
+    <string name="address_street">Street</string>
+    <string name="address_number">Number</string>
+    <string name="address_zip_code">Zip code</string>
+    <string name="address_city">City</string>
+    <string name="address_State">State</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,5 +1,6 @@
-package com.example.mkx_app
+package com.example.mkx_app.acyivitys
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,8 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
+import com.example.mkx_app.R
+import com.example.mkx_app.fragments.SigninFragment
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -59,7 +62,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when(v!!.id){
             buttonSingin?.id->{
                 this.disableLogin()
-                this.loadFragment(SigninFragment())
+                //this.loadFragment(SigninFragment())
             }
         }
     }

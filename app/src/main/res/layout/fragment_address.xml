@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AddressFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtAddress"
+            style="@style/Theme.MKXAPP.h1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/adress"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/txtSigninStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Theme.MKXAPP.label_with_margin"
+            android:text="@string/address_street" />
+
+        <EditText
+            android:id="@+id/editSigninStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            style="@style/Theme.MKXAPP.edit_with_margin"/>
+
+        <TextView
+            android:id="@+id/txtSigninNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Theme.MKXAPP.label_with_margin"
+            android:text="@string/address_number" />
+
+        <EditText
+            android:id="@+id/editSigninNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            style="@style/Theme.MKXAPP.edit_with_margin"/>
+
+        <TextView
+            android:id="@+id/txtSigninZipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Theme.MKXAPP.label_with_margin"
+            android:text="@string/address_zip_code" />
+
+        <EditText
+            android:id="@+id/editZipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            style="@style/Theme.MKXAPP.edit_with_margin"/>
+
+        <TextView
+            android:id="@+id/txtSigninCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Theme.MKXAPP.label_with_margin"
+            android:text="@string/address_city" />
+
+        <EditText
+            android:id="@+id/editCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            style="@style/Theme.MKXAPP.edit_with_margin"/>
+
+        <TextView
+            android:id="@+id/txtSigninState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Theme.MKXAPP.label_with_margin"
+            android:text="@string/address_State" />
+
+        <Spinner
+            android:id="@+id/sprSigninState"
+            style="@style/Theme.MKXAPP.edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -52,7 +52,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/user_last_name"
+        android:text="@string/user_lastName"
         app:layout_constraintEnd_toEndOf="@+id/editUserName"
         app:layout_constraintStart_toStartOf="@+id/editUserName"
         app:layout_constraintTop_toBottomOf="@+id/editUserName" />
