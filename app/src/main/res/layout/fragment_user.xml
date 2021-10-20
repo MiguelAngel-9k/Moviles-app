@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.UserFragment">
+
+    <ImageView
+        android:id="@+id/imgUserAvatar"
+        style="@style/Theme.MKXAPP.user_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_person_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtProfile"
+        style="@style/Theme.MKXAPP.h2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgUserAvatar"
+        app:layout_constraintTop_toTopOf="@+id/imgUserAvatar" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfile"
+        app:layout_constraintStart_toStartOf="@+id/txtProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfile">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="71dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintStart_toStartOf="@+id/txtProfile"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtProfileEmail"
+        style="@style/Theme.MKXAPP.post_by"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfile"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

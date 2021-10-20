@@ -25,7 +25,8 @@ class DashboardActivity : AppCompatActivity() {
             Post("Title4"),
             Post("Title5"),
             Post("Title6")
-        )
+        ),
+            R.layout.fragment_post_view
         )
 
     }
