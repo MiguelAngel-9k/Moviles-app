@@ -20,7 +20,7 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/txtAccount"
+                android:id="@+id/txtInformation"
                 style="@style/Theme.MKXAPP.h1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -12,77 +12,89 @@
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/txtAccount"
+            android:id="@+id/txtInformation"
             style="@style/Theme.MKXAPP.h1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/information"
             android:layout_marginTop="32dp" />
 
-        <TextView
-            android:id="@+id/txtSigninName"
-            style="@style/Theme.MKXAPP.label_with_margin"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/user_name" />
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
 
-        <EditText
-            android:id="@+id/editSigninName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            style="@style/Theme.MKXAPP.edit_with_margin"/>
-
-        <TextView
-            android:id="@+id/txtSigninLastname"
-            style="@style/Theme.MKXAPP.label_with_margin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/user_lastName" />
-
-        <EditText
-            android:id="@+id/editSigninLatName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            style="@style/Theme.MKXAPP.edit_with_margin"/>
-
-        <TextView
-            android:id="@+id/imgUser"
-            style="@style/Theme.MKXAPP.h2"
-            android:layout_marginTop="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/avatar" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="143dp"
-            android:src="@drawable/ic_image_24" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-            <ImageButton
-                android:id="@+id/addImage"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/Theme.MKXAPP.button"
-                android:src="@drawable/ic_arrow_circle_up_24" />
+                android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                style="@style/Theme.MKXAPP.button"
-                android:src="@drawable/ic_add_a_photo_24" />
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/txtSigninName"
+                    style="@style/Theme.MKXAPP.label_with_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name" />
+
+                <EditText
+                    android:id="@+id/editSigninName"
+                    style="@style/Theme.MKXAPP.edit_with_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/txtSigninLastname"
+                    style="@style/Theme.MKXAPP.label_with_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_lastName" />
+
+                <EditText
+                    android:id="@+id/editSigninLatName"
+                    style="@style/Theme.MKXAPP.edit_with_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/txtAvatar"
+                    style="@style/Theme.MKXAPP.h2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/avatar" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="143dp"
+                    android:src="@drawable/ic_image_24" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/addImage"
+                        style="@style/Theme.MKXAPP.button"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arrow_circle_up_24" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        style="@style/Theme.MKXAPP.button"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_add_a_photo_24" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 

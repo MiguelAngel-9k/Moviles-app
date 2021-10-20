@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MKXAPP">
         <activity
+            android:name=".acyivitys.DashboardActivity"
+            android:exported="true" />
+        <activity
             android:name=".acyivitys.SigninActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,8 +24,7 @@
         <activity
             android:name=".acyivitys.MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.MKXAPP.login_style">
-        </activity>
+            android:theme="@style/Theme.MKXAPP.login_style"></activity>
     </application>
 
 </manifest>
