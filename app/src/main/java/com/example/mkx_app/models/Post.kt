@@ -1,4 +1,4 @@
 package com.example.mkx_app.models
 
-class Post {
+class Post(val title:String) {
 }

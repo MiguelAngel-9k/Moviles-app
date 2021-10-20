@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".fragments.NavbarFragment">
+    tools:context=".fragments.NavbarFragment"
+    android:background="@color/dark_blue">
 
     <ImageButton
         android:id="@+id/btbBurger"
