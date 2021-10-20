@@ -11,6 +11,9 @@
         <item name="android:textSize">18sp</item>
         <item name="android:textAlignment">textStart</item>
     </style>
+    <style name="Theme.MKXAPP.label_sm">
+        <item name="android:textSize">12sp</item>
+    </style>
     <style name="Theme.MKXAPP.label_with_margin">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/primary_text</item>
@@ -21,6 +24,9 @@
     <style name="Theme.MKXAPP.edit">
         <item name="android:backgroundTint">@color/primary_text</item>
         <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Theme.MKXAPP.edit_sm">
+        <item name="android:textSize">10sp</item>
     </style>
     <style name="Theme.MKXAPP.edit_with_margin">
         <item name="android:backgroundTint">@color/primary_text</item>
@@ -52,6 +58,14 @@
         <item name="android:background">@drawable/button_rounded</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:layout_width">120dp</item>
+    </style>
+    <style name="Theme.MKXAPP.button.cancel">
+        <item name="android:background">@drawable/cancel_button</item>
+    </style>
+    <style name="Theme.MKXAPP.button_sm">
+        <item name="android:background">@drawable/button_rounded</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <style name="Theme.MKXAPP.burger_button">
         <item name="android:background">@drawable/button_rounded</item>
