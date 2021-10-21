@@ -28,9 +28,13 @@ class PostAdapter(val posts:List<Post>, val layoutId: Int):RecyclerView.Adapter<
                     val postTitle = view.findViewById<TextView>(R.id.txtPostTitle)
                     postTitle.setText(post.title)
                 }
-                R.layout.fragment_cover_post->{
+                R.layout.fragment_cover_post-> {
                     val coverTitle = view.findViewById<TextView>(R.id.txtPostCovertitle)
                     coverTitle.setText(post.title)
+                }
+                R.layout.fragment_document->{
+                    val documentName = view.findViewById<TextView>(R.id.txtDocument)
+                    documentName.setText(post.title)
                 }
             }
         }

@@ -7,7 +7,7 @@
     tools:context=".fragments.PostDescriptionFragment">
 
     <ImageView
-        android:id="@+id/imgCoverPublis"
+        android:id="@+id/imgContentPost"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="16dp"
@@ -24,9 +24,9 @@
         android:orientation="vertical"
         android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imgCoverPublis"
-        app:layout_constraintStart_toStartOf="@+id/imgCoverPublis"
-        app:layout_constraintTop_toBottomOf="@+id/imgCoverPublis">
+        app:layout_constraintEnd_toEndOf="@+id/imgContentPost"
+        app:layout_constraintStart_toStartOf="@+id/imgContentPost"
+        app:layout_constraintTop_toBottomOf="@+id/imgContentPost">
 
         <TextView
             android:id="@+id/txtSearchCar"
@@ -73,7 +73,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgCoverPublis"
+        app:layout_constraintStart_toEndOf="@+id/imgContentPost"
         app:layout_constraintTop_toBottomOf="@+id/txtPublisTitle" />
 
     <TextView
@@ -111,8 +111,8 @@
         android:text="@string/post_title"
         android:textAlignment="textStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgCoverPublis"
-        app:layout_constraintTop_toTopOf="@+id/imgCoverPublis" />
+        app:layout_constraintStart_toEndOf="@+id/imgContentPost"
+        app:layout_constraintTop_toTopOf="@+id/imgContentPost" />
 
 
     <!--

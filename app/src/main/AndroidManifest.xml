@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MKXAPP">
         <activity
-            android:name=".acyivitys.CommentActivity"
+            android:name=".acyivitys.PostContentActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +19,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".acyivitys.PublishActivity"
+            android:name=".acyivitys.CommentActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".acyivitys.PublishActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".acyivitys.ProfileActivity"
             android:exported="true">
