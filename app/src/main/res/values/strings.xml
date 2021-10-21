@@ -21,15 +21,18 @@
     <string name="address_State">State</string>
     <string name="recent">Recent</string>
     <string name="post_by">Post by:</string>
-   <string name="car_year">Year</string>
-   <string name="car_factory">Factory</string>
-   <string name="car_model">Model</string>
-   <string name="search_car">Search car</string>
-   <string name="new_car">New car</string>
-   <string name="post_description">Description</string>
-   <string name="post_title">Add a title</string>
-   <string name="add_image">Add image</string>
-   <string name="add_document">Add document</string>
-   <string name="cancel">Cancel</string>
-   <string name="publish">Publish</string>
+    <string name="car_year">Year</string>
+    <string name="car_factory">Factory</string>
+    <string name="car_model">Model</string>
+    <string name="search_car">Search car</string>
+    <string name="new_car">New car</string>
+    <string name="post_description">Description</string>
+    <string name="post_title">Add a title</string>
+    <string name="add_image">Add image</string>
+    <string name="add_document">Add document</string>
+    <string name="cancel">Cancel</string>
+    <string name="publish">Publish</string>
+    <string name="comment">Comment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
