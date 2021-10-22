@@ -137,7 +137,7 @@
                     android:id="@+id/RvContentImg"
                     android:layout_width="match_parent"
                     android:layout_height="164dp"
-                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     app:spanCount="3"
                     tools:listitem="@layout/fragment_cover_post" />
 
