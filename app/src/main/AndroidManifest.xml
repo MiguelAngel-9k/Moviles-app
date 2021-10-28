@@ -12,11 +12,6 @@
         <activity
             android:name=".acyivitys.PostContentActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".acyivitys.CommentActivity"
@@ -28,18 +23,19 @@
         <activity
             android:name=".acyivitys.ProfileActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".acyivitys.DashboardActivity"
             android:exported="true" />
         <activity
             android:name=".acyivitys.SigninActivity"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".acyivitys.MainActivity"
             android:exported="true"

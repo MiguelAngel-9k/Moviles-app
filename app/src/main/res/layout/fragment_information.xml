@@ -60,39 +60,54 @@
                     android:inputType="textPersonName" />
 
                 <TextView
-                    android:id="@+id/txtAvatar"
-                    style="@style/Theme.MKXAPP.h2"
+                    android:id="@+id/txtSigninPhone"
+                    style="@style/Theme.MKXAPP.label_with_margin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/avatar" />
+                    android:text="@string/user_phone" />
 
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="143dp"
-                    android:src="@drawable/ic_image_24" />
-
-                <LinearLayout
+                <EditText
+                    android:id="@+id/editSigninPhone"
+                    style="@style/Theme.MKXAPP.edit_with_margin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txtAvatar"-->
+<!--                    style="@style/Theme.MKXAPP.h2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:text="@string/avatar" />-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="143dp"-->
+<!--                    android:src="@drawable/ic_image_24" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal">-->
 
 
-                    <ImageButton
-                        android:id="@+id/addImage"
-                        style="@style/Theme.MKXAPP.button"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_arrow_circle_up_24" />
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/addImage"-->
+<!--                        style="@style/Theme.MKXAPP.button"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:src="@drawable/ic_arrow_circle_up_24" />-->
 
-                    <ImageButton
-                        android:id="@+id/imageButton2"
-                        style="@style/Theme.MKXAPP.button"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:src="@drawable/ic_add_a_photo_24" />
-                </LinearLayout>
+<!--                    <ImageButton-->
+<!--                        android:id="@+id/imageButton2"-->
+<!--                        style="@style/Theme.MKXAPP.button"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:src="@drawable/ic_add_a_photo_24" />-->
+<!--                </LinearLayout>-->
             </LinearLayout>
         </ScrollView>
 
