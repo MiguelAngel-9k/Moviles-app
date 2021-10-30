@@ -16,4 +16,9 @@ object User : Person() {
             false
         }
     }
+
+    fun setAccountInformation(_email:String, _password:String){
+        this.email = _email
+        this.pwd = _password
+    }
 }

@@ -36,4 +36,5 @@
     <string name="image">Image</string>
     <string name="document">Document</string>
     <string name="user_phone">Phone</string>
+    <string name="password_requirements">At least, (0-9, Az, @#!?, 8 characters long)</string>
 </resources>

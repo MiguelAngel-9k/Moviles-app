@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="16dp"
+    tools:context=".fragments.AccountFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtInformation"
+                style="@style/Theme.MKXAPP.h1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/account"
+                app:layout_constraintTop_toBottomOf="@+id/signinTablayout" />
+
+            <TextView
+                android:id="@+id/txtSigninEmail"
+                style="@style/Theme.MKXAPP.label_with_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_email" />
+
+            <EditText
+                android:id="@+id/editSigninEmail"
+                style="@style/Theme.MKXAPP.edit_with_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/txtSigninPassword"
+                style="@style/Theme.MKXAPP.label_with_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user_password" />
+
+            <TextView
+                android:id="@+id/txtPasswordRequirements"
+                style="@style/Theme.MKXAPP.label_sm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password_requirements" />
+
+            <EditText
+                android:id="@+id/editSigninPassword"
+                style="@style/Theme.MKXAPP.edit_with_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/txtSigninConfirmPass"
+                style="@style/Theme.MKXAPP.label_with_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_password" />
+
+            <EditText
+                android:id="@+id/editConfrimPassword"
+                style="@style/Theme.MKXAPP.edit_with_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnSaveAccount"
+                style="@style/Theme.MKXAPP.button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/continue_button" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
