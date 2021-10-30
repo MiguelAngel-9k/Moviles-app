@@ -1,5 +1,6 @@
 package com.example.mkx_app.acyivitys
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -11,6 +12,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.util.PatternsCompat
 import com.example.mkx_app.R
+import com.example.mkx_app.models.User
 import java.util.regex.Pattern
 
 class AccountActivity : AppCompatActivity() {
@@ -27,6 +29,8 @@ class AccountActivity : AppCompatActivity() {
 
     //Save account button
     lateinit var btnSaveAccount: Button
+
+    private var isEqual = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,7 +53,8 @@ class AccountActivity : AppCompatActivity() {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                changeLabelColor(lblConfirmPassword, s.toString() == inPassword.text.toString())
+                isEqual = s.toString() == inPassword.text.toString()
+                changeLabelColor(lblConfirmPassword, isEqual)
             }
 
             override fun afterTextChanged(s: Editable?) {
@@ -102,9 +107,26 @@ class AccountActivity : AppCompatActivity() {
 
     private fun saveAccount() {
 
-        if(this.isPassword(this.lblPassword, this.inPassword.text.toString()))
-            Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
-        else Toast.makeText(this, "Something is wrong", Toast.LENGTH_SHORT).show()
+        val validations = listOf(isEmail(this.lblEmail, this.inEmail.text.toString()), this.isPassword(this.lblPassword, this.inPassword.text.toString()), isEqual)
+        var verify = false
+
+        validations.forEach {
+            if (!it) {
+                verify = it
+                Toast.makeText(this, "Something is wrong", Toast.LENGTH_SHORT).show()
+                return
+            }
+        }
+
+        User.setAccountInformation(this.inEmail.toString(), this.inPassword.text.toString())
+        Toast.makeText(this, "Success!!", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, SigninActivity::class.java).apply {
+            putExtra("User", "Mike")
+        }
+
+        startActivity(intent)
 
     }
+
+
 }
