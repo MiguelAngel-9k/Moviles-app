@@ -120,7 +120,7 @@ class AccountActivity : AppCompatActivity() {
 
         User.setAccountInformation(this.inEmail.toString(), this.inPassword.text.toString())
         Toast.makeText(this, "Success!!", Toast.LENGTH_SHORT).show()
-        val intent = Intent(this, SigninActivity::class.java).apply {
+        val intent = Intent(this, InformationAccount::class.java).apply {
             putExtra("User", "Mike")
         }
 
