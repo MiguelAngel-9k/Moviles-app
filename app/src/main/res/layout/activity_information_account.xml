@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:padding="16dp"
     tools:context=".fragments.InformationFragment">
 
     <LinearLayout
@@ -72,42 +74,49 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName" />
+                    android:inputType="phone" />
 
-                                <TextView
-                                    android:id="@+id/txtAvatar"
-                                    style="@style/Theme.MKXAPP.h2"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="16dp"
-                                    android:text="@string/avatar" />
+                <TextView
+                    android:id="@+id/txtAvatar"
+                    style="@style/Theme.MKXAPP.h2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/avatar" />
 
-                                <ImageView
-                                    android:id="@+id/ImgContainer"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="143dp"
-                                    android:src="@drawable/ic_image_24" />
+                <ImageView
+                    android:id="@+id/ImgContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="143dp"
+                    android:src="@drawable/ic_image_24" />
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
 
-                                    <ImageButton
-                                        android:id="@+id/addImage"
-                                        style="@style/Theme.MKXAPP.button"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/ic_arrow_circle_up_24" />
+                    <ImageButton
+                        android:id="@+id/addImage"
+                        style="@style/Theme.MKXAPP.button"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_arrow_circle_up_24" />
 
-                                    <ImageButton
-                                        android:id="@+id/takePicture"
-                                        style="@style/Theme.MKXAPP.button"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:src="@drawable/ic_add_a_photo_24" />
-                                </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/takePicture"
+                        style="@style/Theme.MKXAPP.button"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_add_a_photo_24" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/informationContinue"
+                    style="@style/Theme.MKXAPP.button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/continue_button" />
             </LinearLayout>
         </ScrollView>
 
