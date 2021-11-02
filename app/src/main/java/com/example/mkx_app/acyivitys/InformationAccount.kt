@@ -3,16 +3,20 @@ package com.example.mkx_app.acyivitys
 import android.Manifest
 import android.app.Activity
 import android.content.ContentValues.TAG
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.PatternMatcher
 import android.provider.MediaStore
+import android.provider.MediaStore.Images.Media
 import android.util.Log
 import android.widget.*
 import androidx.activity.result.ActivityResult
@@ -21,10 +25,12 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.toBitmap
 import com.example.mkx_app.R
 import com.example.mkx_app.models.User
 import org.w3c.dom.Text
 import java.io.ByteArrayOutputStream
+import java.io.FileNotFoundException
 import java.net.URI
 import java.util.regex.Pattern
 
@@ -51,14 +57,28 @@ class InformationAccount : AppCompatActivity() {
     lateinit var btnContinue:Button
 
     private var userImage:Bitmap? = null
-    var cameraActivityLauncher:ActivityResultLauncher<Intent>? = null
+    var cameraActivityLauncher:ActivityResultLauncher<Intent>? = registerForActivityResult(ActivityResultContracts.StartActivityForResult(), ActivityResultCallback { result->
+        if (result.resultCode == Activity.RESULT_OK && result.data != null){
+            val bundle = result.data?.extras
+            Log.d("EXTRAS", result.data?.extras.toString())
+            userImage = bundle?.get("data") as Bitmap
+            imgAvatar.setImageBitmap(userImage)
+            User.avatar = getByteArrayFromBitmap(userImage as Bitmap)
+        }
+    })
 
-    private val startForActivityGallery = registerForActivityResult(
+    private val startForActivityGallery:ActivityResultLauncher<Intent>? = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ){ result ->
-        if (result.resultCode == Activity.RESULT_OK){
-            val data = result.data?.data
-            imgAvatar.setImageURI(data)
+        if (result.resultCode == Activity.RESULT_OK && result.data != null){
+            try {
+                val inputStram = contentResolver.openInputStream(result.data?.data!!)
+                userImage = BitmapFactory.decodeStream(inputStram)
+                imgAvatar.setImageBitmap(userImage)
+                User.avatar = getByteArrayFromBitmap(userImage as Bitmap)
+            }catch (e:FileNotFoundException){
+                Toast.makeText(this, "file not found", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
@@ -84,15 +104,6 @@ class InformationAccount : AppCompatActivity() {
 
         btnContinue = findViewById<Button>(R.id.informationContinue)
 
-        cameraActivityLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult(), ActivityResultCallback { result->
-            if (result.resultCode == Activity.RESULT_OK && result.data != null){
-                val bundle = result.data?.extras
-                userImage = bundle?.get("data") as Bitmap
-                imgAvatar.setImageBitmap(userImage)
-                User.avatar = getByteArrayFromBitmap(userImage as Bitmap)
-            }
-        })
-
         btnContinue.setOnClickListener{ saveInfo() }
 
     }
@@ -115,13 +126,19 @@ class InformationAccount : AppCompatActivity() {
             inPhone.text.toString()
         )
 
-        //Abrir intent de address activity
+        if (User.avatar == null){
+            var defaultImage = ContextCompat.getDrawable(this, R.drawable.ic_person_24)
+            User.avatar = getByteArrayFromDrawable(defaultImage!!, this)
+        }
+
+        val intent = Intent(this, AddressActivity::class.java)
+        startActivity(intent)
     }
 
     private fun openGallery() {
         val intent = Intent(Intent.ACTION_GET_CONTENT)
         intent.type = "image/*"
-        startForActivityGallery.launch(intent)
+        startForActivityGallery?.launch(intent)
     }
 
     private fun openCamera(){
@@ -201,6 +218,13 @@ class InformationAccount : AppCompatActivity() {
     //Byte array from bitmap
     private fun getBitmapFromByteArray(data: ByteArray):Bitmap{
         return BitmapFactory.decodeByteArray(data, 0, data.size)
+    }
+    //Get byte array from drawable
+    private fun getByteArrayFromDrawable(drawable: Drawable, context: Context):ByteArray{
+        var bitmap = drawable.toBitmap(drawable.intrinsicWidth, drawable.intrinsicHeight, null)
+        val stream = ByteArrayOutputStream()
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream)
+        return stream.toByteArray()
     }
 
     //Only letters
