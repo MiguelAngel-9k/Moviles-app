@@ -21,4 +21,12 @@ object User : Person() {
         this.email = _email
         this.pwd = _password
     }
+
+    fun setPersonalInfroamtion(_name:String, _lastName:String,  _phone:String){
+        this.name = _name
+        this.lastName = _lastName
+        this.phone = _phone
+    }
+
+    var avatar:ByteArray? = null
 }
