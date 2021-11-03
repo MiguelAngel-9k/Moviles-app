@@ -18,7 +18,7 @@
     <string name="address_number">Number</string>
     <string name="address_zip_code">Zip code</string>
     <string name="address_city">City</string>
-    <string name="address_State">State</string>
+    <string name="address_State">State (Select one state)</string>
     <string name="recent">Recent</string>
     <string name="post_by">Post by:</string>
     <string name="car_year">Year</string>
@@ -37,4 +37,15 @@
     <string name="document">Document</string>
     <string name="user_phone">Phone</string>
     <string name="password_requirements">At least, (0-9, Az, @#!?, 8 characters long)</string>
+    <string name="Sign_in">btnSignin</string>
+    <string-array name="cities">
+        <item>Select</item>
+        <item>Nuevo León</item>
+        <item>Veracruz</item>
+        <item>San Luis Potosí</item>
+        <item>CDMX</item>
+        <item>Chihuahua</item>
+        <item>Coahuila</item>
+        <item>Baja California</item>
+    </string-array>
 </resources>

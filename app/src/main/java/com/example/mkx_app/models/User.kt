@@ -1,6 +1,5 @@
 package com.example.mkx_app.models
 
-import android.app.Activity
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
 
@@ -26,6 +25,10 @@ object User : Person() {
         this.name = _name
         this.lastName = _lastName
         this.phone = _phone
+    }
+
+    fun setAddressInfromation(_address:Address){
+        this.address = _address
     }
 
     var avatar:ByteArray? = null

@@ -66,7 +66,7 @@
                     android:text="@string/address_zip_code" />
 
                 <EditText
-                    android:id="@+id/editZipCode"
+                    android:id="@+id/editSigninZipCode"
                     style="@style/Theme.MKXAPP.edit_with_margin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
                     android:text="@string/address_city" />
 
                 <EditText
-                    android:id="@+id/editCity"
+                    android:id="@+id/editSigninCity"
                     style="@style/Theme.MKXAPP.edit_with_margin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
                     android:text="@string/address_State" />
 
                 <Spinner
-                    android:id="@+id/sprSigninState"
+                    android:id="@+id/spSigninState"
                     style="@style/Theme.MKXAPP.edit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
