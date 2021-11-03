@@ -2,6 +2,7 @@ package com.example.mkx_app.acyivitys
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mkx_app.R
 import com.example.mkx_app.adapters.PostAdapter
@@ -14,6 +15,9 @@ class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
+
+        val toolbar:Toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
 
         this.postRecycler = findViewById<RecyclerView>(R.id.RvRecent)
 
