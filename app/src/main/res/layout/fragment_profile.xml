@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/imgUserAvatar"
+        style="@style/Theme.MKXAPP.user_profile"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:src="@drawable/ic_person_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtProfile"
+        style="@style/Theme.MKXAPP.h2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgUserAvatar"
+        app:layout_constraintTop_toTopOf="@+id/imgUserAvatar" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfile"
+        app:layout_constraintStart_toStartOf="@+id/txtProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfile">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="71dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintStart_toStartOf="@+id/txtProfile"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtProfileEmail"
+        style="@style/Theme.MKXAPP.post_by"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfile"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RvUserPost"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:spanCount="3"
+        tools:listitem="@layout/fragment_cover_post" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfile"
+        app:layout_constraintStart_toStartOf="@+id/imgUserAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/imgUserAvatar">
+
+        <Button
+            android:id="@+id/btnNew"
+            style="@style/Theme.MKXAPP.button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/post" />
+
+        <Button
+            android:id="@+id/btnEnd"
+            style="@style/Theme.MKXAPP.button.cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/logout" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

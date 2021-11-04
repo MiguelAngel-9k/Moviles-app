@@ -215,7 +215,7 @@ class InformationAccount : AppCompatActivity() {
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream)
         return stream.toByteArray()
     }
-    //Byte array from bitmap
+    //Byte array to bitmap
     private fun getBitmapFromByteArray(data: ByteArray):Bitmap{
         return BitmapFactory.decodeByteArray(data, 0, data.size)
     }

@@ -2,6 +2,7 @@ package com.example.mkx_app.acyivitys
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mkx_app.R
 import com.example.mkx_app.adapters.PostAdapter
@@ -10,10 +11,12 @@ import com.example.mkx_app.models.Post
 class ProfileActivity : AppCompatActivity() {
 
     private var rvProfilePost:RecyclerView? = null
+    lateinit var imgUer:ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
+
 
         rvProfilePost = findViewById<RecyclerView>(R.id.RvProfilePost)
         rvProfilePost?.adapter = PostAdapter(
@@ -29,4 +32,5 @@ class ProfileActivity : AppCompatActivity() {
         )
 
     }
+
 }

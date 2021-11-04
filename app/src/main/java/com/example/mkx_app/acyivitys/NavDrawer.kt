@@ -19,6 +19,7 @@ import com.example.mkx_app.R
 import com.example.mkx_app.adapters.PostAdapter
 import com.example.mkx_app.fragments.AccountFragment
 import com.example.mkx_app.fragments.DashboardFragment
+import com.example.mkx_app.fragments.ProfileFragment
 import com.example.mkx_app.models.Post
 import com.google.android.material.navigation.NavigationView
 
@@ -47,6 +48,9 @@ class NavDrawer : AppCompatActivity() {
                 R.id.home->{
                     showFragment(DashboardFragment())
                 }
+                R.id.profile->{
+                    showFragment(ProfileFragment())
+                }
             }
 
             drawerLayout.closeDrawer(GravityCompat.START)
@@ -58,5 +62,13 @@ class NavDrawer : AppCompatActivity() {
         val transaction = supportFragmentManager.beginTransaction()
         transaction.add(R.id.frameLayout ,fragment)
         transaction.commit()
+    }
+
+    override fun onBackPressed() {
+
+        if(drawerLayout.isDrawerOpen(GravityCompat.START))
+            drawerLayout.closeDrawer(GravityCompat.START)
+
+        super.onBackPressed()
     }
 }
