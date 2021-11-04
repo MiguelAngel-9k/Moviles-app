@@ -48,6 +48,15 @@
         <item>Coahuila</item>
         <item>Baja California</item>
     </string-array>
-    <string name="open_drawer">Open Drawer</string>
-    <string name="close_drawer">Close Drawer</string>
+    <string name="open">Open Drawer</string>
+    <string name="close">Close Drawer</string>
+    <string name="search">Find</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="downloads">Downloads</string>
+    <string name="post">Post Manual</string>
+    <string name="history">History</string>
+    <string name="logout">Log out</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

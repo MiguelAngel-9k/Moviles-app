@@ -7,57 +7,56 @@ import android.text.Layout
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import androidx.recyclerview.widget.RecyclerView
 import com.example.mkx_app.R
+import com.example.mkx_app.adapters.PostAdapter
 import com.example.mkx_app.fragments.AccountFragment
+import com.example.mkx_app.fragments.DashboardFragment
+import com.example.mkx_app.models.Post
 import com.google.android.material.navigation.NavigationView
 
 class NavDrawer : AppCompatActivity() {
 
-    private lateinit var toggle: ActionBarDrawerToggle
-    private lateinit var drawerLayout:DrawerLayout
-    private lateinit var navigationView:NavigationView
+    private lateinit var toolbar: Toolbar
+    private lateinit var drawerLayout: DrawerLayout
+    private lateinit var drawerToggle: ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nav_drawer)
 
-        val toolbar: Toolbar = findViewById<Toolbar>(R.id.toolbar)
-        setSupportActionBar(toolbar)
-
+        toolbar = findViewById<Toolbar>(R.id.toolbar)
         drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
-        navigationView = findViewById<NavigationView>(R.id.nav_view)
 
-        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open_drawer, R.string.close_drawer)
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
+        setSupportActionBar(toolbar)
+        drawerToggle = ActionBarDrawerToggle(this, drawerLayout, toolbar,R.string.open, R.string.close)
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        drawerLayout.addDrawerListener(drawerToggle)
+        drawerToggle.syncState()
 
-        navigationView.setNavigationItemSelectedListener {
-            when(it.itemId){
-                R.id.nav_Home->{
-                    supportFragmentManager.beginTransaction().apply {
-                        replace(R.id.fragmentContainerView, AccountFragment())
-                        commit()
-                    }
+        val navigationView = findViewById<NavigationView>(R.id.nav_view)
+        navigationView.setNavigationItemSelectedListener { item->
+            when(item.itemId){
+                R.id.home->{
+                    showFragment(DashboardFragment())
                 }
             }
+
             drawerLayout.closeDrawer(GravityCompat.START)
             true
         }
-
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-        if (toggle.onOptionsItemSelected(item))
-            return true
-
-        return super.onOptionsItemSelected(item)
-
+    private fun showFragment(fragment:Fragment){
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.add(R.id.frameLayout ,fragment)
+        transaction.commit()
     }
 }
