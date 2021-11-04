@@ -9,11 +9,19 @@
         <entry key="..\:/ANDROID/MKXAPP/app/src/main/res/drawable/singin_button_rounded.xml" value="0.19675925925925927" />
         <entry key="..\:/ANDROID/MKXAPP/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/drawable/ic_person_24.xml" value="0.26979166666666665" />
+        <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/drawable/tool_bar_style.xml" value="0.2601851851851852" />
         <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/layout/activity_account.xml" value="0.246875" />
         <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/layout/activity_address.xml" value="0.25364583333333335" />
+        <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/layout/activity_dashboard.xml" value="0.22" />
         <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/layout/activity_information_account.xml" value="0.33" />
+        <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/layout/activity_nav_drawer.xml" value="0.22" />
+        <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/layout/app_bar.xml" value="0.20199275362318841" />
         <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/layout/fragment_address.xml" value="0.36666666666666664" />
+        <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
         <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/layout/fragment_information.xml" value="0.246875" />
+        <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/layout/nav_header.xml" value="0.17314814814814813" />
+        <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/menu/drawer_menu.xml" value="0.1" />
+        <entry key="..\:/ANDROID/Moviles-app/app/src/main/res/menu/nav_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/cancel_button.xml" value="0.24027777777777778" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/ok_button.xml" value="0.24027777777777778" />
         <entry key="..\:/Users/mike_/Documents/GitHub/Moviles-app/app/src/main/res/drawable/singin_button_rounded.xml" value="0.24027777777777778" />

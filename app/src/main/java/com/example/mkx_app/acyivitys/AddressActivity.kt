@@ -80,7 +80,7 @@ class AddressActivity : AppCompatActivity() {
             )
         )
 
-        val intent = Intent(this, DashboardActivity::class.java)
+        val intent = Intent(this, NavDrawer::class.java)
         startActivity(intent)
     }
 }
